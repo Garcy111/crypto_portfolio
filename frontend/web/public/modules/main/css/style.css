@@ -1,0 +1,361 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #180014;
+	background: #444;
+	background: url('../images/bg2.jpg') center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+canvas#chart-area {
+	margin-top: 25px;
+}
+
+.container {
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.left_col {
+	float: left;
+	width: 55%;
+}
+
+.right_col {
+	float: left;
+	width: 45%;
+}
+
+#total_usd, #total_rub {
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	font: 40px Arial;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+#total_rub {
+	display: none;
+}
+.prices {
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+
+#canvas-holder {
+	float: right;
+	width: 92%;
+}
+
+
+.prices .curency {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 52px;
+	height: auto;
+	font: 16px Arial;
+	border: 1px solid #253648;
+	padding: 0;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background: rgba(250, 250, 250, 0.6);
+}
+
+.prices .curency .col p {
+	margin: 0;
+	line-height: 52px;
+}
+
+.prices .curency .col {
+	float: left;
+	text-align: center;
+	border-right: 1px solid rgba(230, 230, 230, .4);
+	box-sizing: border-box;
+}
+
+.prices .curency .col-0 {
+	width: 60px;
+	height: 52px;
+}
+
+.prices .curency .col-1 {
+	width: 15%;
+}
+
+.prices .curency .col-2 {
+	width: 18%;
+	font-weight: bold;
+}
+
+.prices .curency .col-3 {
+	width: 15%;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.prices .curency .col-4 {
+	width: calc(20% - 60px);
+}
+
+.prices .curency .col-5 {
+	width: calc(22% - 40px);
+}
+
+.prices .curency .col-6 {
+	width: 10%;
+}
+
+.prices .curency .col-6 p {
+	font-size: 15px;
+	font-style: italic;
+	color: #494b4c
+}
+
+.prices .curency .col-7 {
+	width: 40px;
+}
+
+.prices .curency .col-7 .edit {
+	width: 20px;
+	height: 36px;
+	margin: 10px auto 0;
+	text-align: center;
+	cursor: pointer;
+	background: url('../images/edit.svg') center no-repeat;
+	background-size: 70%;
+	transition: .2s;
+}
+.prices .curency .col-7:hover .edit {
+	background-size: 75%;
+}
+
+.edit-block {
+	width: 100%;
+	height: 32px;
+	background: #222;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.edit-block {
+	display: none;
+}
+
+.editCoin {
+	float: left;
+	margin: 0;
+}
+
+.editCoin input {
+	height: 22px;
+	margin-top: 6px;
+	padding-left: 10px;
+	outline: none;
+	border: 1px solid #fafafa;
+	box-sizing: border-box;
+}
+
+.editCoin button {
+	width: 42px;
+	height: 22px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	background: #fff;
+	transition: .1s;
+}
+
+.editCoin button:hover {
+	color: #fff;
+	background: #429780
+}
+
+.body-curency .col-7 {
+	cursor: pointer;
+}
+
+.delCoin {
+	float: left;
+	color: #fff;
+	margin: 9px 0 0 20px;
+	font-size: 13px;
+	text-decoration: none;
+	transition: .25s;
+}
+.delCoin:hover {
+	color: #F4461E;
+}
+
+.prices .head-curency {
+	min-height: 28px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.prices .head-curency {
+	font-size: 15px;
+	font-style: italic;
+}
+
+.prices .head-curency .col-2 {
+	font-weight: normal;
+}
+
+.prices .curency.HIDE {
+	display: none;
+}
+
+.prices .curency img {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 16px auto 0;
+}
+
+.prices .curency .proc {
+	color: #05ff20;
+}
+.prices .curency .proc.red {
+	color: #ff0589;
+}
+
+.top_bar {
+	width: 100%;
+	height: 26px;
+	background: rgba(0,0,0, .2);
+	box-sizing: border-box;
+}
+
+.top_bar .item {
+	display: inline-block;
+	float: left;
+}
+
+.logout {
+	float: right;
+	color: #fff;
+	font: 16px Arial;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+.logout:hover {
+	text-decoration: underline;
+}
+
+.top_bar .value {
+	font: 16px Arial;
+	line-height: 26px;
+	padding: 0 10px 0 0;
+	letter-spacing: 1px;
+	color: #EFF3F3;
+	box-sizing: border-box;
+}
+
+.top_bar .value span {
+	color: #429780;
+}
+
+.total_sum {
+	color: #FFF;
+}
+
+.searchCoinsForm {
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.search_field {
+	float: left;
+	height: 26px;
+	width: 160px;
+	outline: none;
+	border: 0;
+	margin: 0;
+	padding: 0 0 0 10px;
+	box-sizing: border-box;
+}
+
+.sendSearch {
+	float: left;
+	width: 42px;
+	height: 26px;
+	border: 0;
+	margin: 0 0 0 5px;
+	outline: none;
+	cursor: pointer;
+	background: #fff url('../images/search.svg') center no-repeat;
+	background-size: 42%;
+	transition: background-color .1s;
+}
+
+.sendSearch:hover {
+	background: url('../images/search-white.svg') center no-repeat;
+	background-color: #429780;
+	background-size: 42%;
+}
+
+.sendSearch:active {
+	background-color: #377D6A;
+}
+
+.search_results {
+	width: 100%;
+}
+
+.search_results .row_result {
+	position: relative;
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 34px;
+	height: auto;
+	padding-left: 45px;
+	font: 15px Arial;
+	line-height: 34px;
+	border-bottom: 1px solid #ccc;
+	background: #FFF;
+	box-sizing: border-box;
+}
+
+.search_results .row_result p {
+	margin: 0;
+}
+
+.search_results .row_result .img_coin {
+	position: absolute;
+	left: 15px;
+	top: 7px;
+}
+
+.search_results .row_result .img_coin img {
+	display: block;
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+}
+
+.search_results .row_result .addCoinForm {
+	float: left;
+	margin: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+@media (max-width: 1100px) {
+	.prices {
+		float: none;
+		width: calc(100% - 50px);
+		margin: 0 25px 25px 25px;
+	}
+
+	#canvas-holder {
+		float: none;
+		width: calc(60%);
+	}
+}

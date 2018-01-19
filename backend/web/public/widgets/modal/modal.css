@@ -1,0 +1,43 @@
+.modal-widget {
+	display: none;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	width: 99%;
+	margin: 0 auto;
+	height: auto;
+	z-index: 1001;
+}
+
+.modal-widget p {
+	margin: 0;
+	padding: 15px 30px;
+}
+
+.modal-success {
+	border: 1px solid #B5D7C5;
+	background: #CAEFDB;
+}
+
+.modal-error {
+	border: 1px solid #DDA8A8;
+	background: #EDC0C0;
+}
+
+.close-widget {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+
+.close-widget i {
+	font-size: 20px;
+	color: #5D5D5D;
+	cursor: pointer;
+	transition: color .3s;
+}
+
+.close-widget i:hover {
+	color: #3E3E3E;
+}

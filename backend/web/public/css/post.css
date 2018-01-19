@@ -1,0 +1,146 @@
+.content-post {
+  overflow: hidden;
+  position: relative;
+  padding: 0 20px 20px 20px;
+  margin: 0 220px 0 220px;
+  background: #DCE2EA;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+  .content-post h1, .content-post h2, .content-post h3, .content-post p {
+    padding: 0;
+	margin: 0;
+	color: #3F3F3F;
+	font-family: Arial;
+}
+  .content-post .title {
+    font-size: 18px;
+	margin: 12px 0 6px 0;
+}
+  .content-post .titleInput {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0 8px;
+    margin: 0px 0 3px;
+    font-size: 14pt;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    background: #FAFAFA;
+	box-shadow: inset 1px 1px 6px #EFEFEF;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*.content-post .titleInput:focus {
+      box-shadow: inset 1px 1px 5px rgba(182, 109, 228,.3), inset -1px -1px 5px rgba(182, 109, 228,.4);
+  }*/
+
+.sidebar {
+	float: right;
+	width: 220px;
+	height: auto;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.3);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.sidebar h3 {
+	margin: 12px 0 3px 0;
+	padding: 0;
+	color: #F6F3F7;
+	font: 12pt 'RobotoRegular';
+	line-height: 20px;
+}
+
+.sidebar input[type='text'], .sidebar select {
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	padding: 0 8px;
+	outline: none;
+	border: none;
+	border-radius: 2px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.btn-settings {
+	width: 40px;
+	height: 30px;
+}
+
+.additional-settings {
+	display: none;
+}
+
+/*Дополнительные настройки*/
+.additional-settings h1 {
+	margin: 8px 0 5px 0;
+	font: 22px 'RobotoRegular';
+	text-align: center;
+}
+.additional-settings h3 {
+	margin: 10px 0 5px 0;
+	font: 16px 'RobotoRegular';
+}
+.additional-settings .hint {
+	display: inline;
+	color: #424242;
+	cursor: pointer;
+}
+.additional-settings textarea {
+	width: 100%;
+	max-width: 100%;
+	height: 140px; 
+	padding: 10px;
+	font: 14px 'RobotoRegular';
+	line-height: 20px;
+	outline: none;
+	border: none;
+	border-radius: 2px;
+	background: #FAFAFA;
+	box-shadow: inset 1px 1px 6px #EFEFEF;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.sidebar input:focus {
+	box-shadow: inset 1px 1px 10px rgba(182, 109, 228,.3), inset -1px -1px 10px rgba(182, 109, 228,.3);
+}
+
+.sidebar .name_category[type='text'] {
+	float: left;
+	width: 155px;
+	margin-bottom: 10px;
+}
+
+.sidebar .btn-add {
+	float: left;
+	width: 40px;
+	height: 30px;
+	margin-left: 5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 2px;
+	color: #FFF;
+	background: #27D8A0;
+	line-height: 27px;
+	border-bottom: 3px solid #28BC8D;
+	transition: background .3s;
+}
+
+.sidebar .btn-add:hover {
+	background: #27D29C;
+}
+.sidebar .btn-add:active {
+	background: #28BC8D;
+}
+
+.sidebar .btn-add i {
+	font-size: 14px;
+	text-shadow: 1px 1px 5px #14B780, -1px -1px 5px #14B780;
+}

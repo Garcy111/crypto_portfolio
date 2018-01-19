@@ -1,0 +1,116 @@
+/*Вход в Админ Панель*/
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #DBDBDB;
+}
+
+.hero {
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  background: #298AAA;
+}
+
+#logInBlock {
+	width: 300px;
+	min-height: 250px;
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	margin: -125px 0 0 -150px;
+	background: rgba(250,250,250,.85);
+	border-radius: 0px;
+}
+
+#logInBlock h1 {
+	color: #404040;
+	margin: 15px 0 10px 0;
+	font: 18px Arial;
+	font: 22px 'RobotoLight';
+	text-align: center;
+}
+
+#login-form {
+	width: 260px;
+	margin: 0 auto;
+	font: 17px 'RobotoLight';
+}
+
+#login-form input[type='text'], #login-form input[type='password'] {
+	display: block;
+	width: 100%;
+	height: 35px;
+	font: 18px Arial;
+	margin: 2px 0 8px 0;
+	padding: 7px;
+	border: none;
+	outline: none;
+	border-radius: 0px;
+	box-sizing: border-box;
+}
+
+#login-form input[type='checkbox'] {
+	width: 14px;
+	height: 14px;
+}
+
+/*.form-control {
+	border: 1px solid #CCC;
+}*/
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+/*.has-success .form-control {
+	border: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .085), 0 0 3px #67b168;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .085), 0 0 3px #67b168;
+}
+
+.has-error .form-control {
+  border: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 4px #ce8483;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 4px #ce8483;
+}*/
+
+.help-block {
+	font: 11pt 'RobotoLight';
+	line-height: 11pt;
+	color: #D92B2B;
+}
+
+#logInBlock button {
+	display: block;
+	height: 35px;
+	width: 100px;
+	margin: 10px auto 15px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+	font: 15px 'RobotoBold';
+	background: #2F8EAE;
+	transition: background .3s;
+}
+
+#logInBlock button:hover {
+	background: #2884A2;
+}
+
+#logInBlock button:active {
+	background: #287F9B;
+}
+
+.rememberMe {
+	margin: 5px;
+}

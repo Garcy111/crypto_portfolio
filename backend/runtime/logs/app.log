@@ -1,0 +1,500 @@
+2017-12-29 23:29:33 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: backend\models\CoinsSearch::quan in /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/db/BaseActiveRecord.php(272): yii\base\Component->__set('quan', '')
+#1 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Model.php(698): yii\db\BaseActiveRecord->__set('quan', '')
+#2 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Model.php(827): yii\base\Model->setAttributes(Array)
+#3 /Applications/MAMP/htdocs/backend/models/CoinsSearch.php(52): yii\base\Model->load(Array)
+#4 /Applications/MAMP/htdocs/backend/controllers/CoinsController.php(39): backend\models\CoinsSearch->search(Array)
+#5 [internal function]: backend\controllers\CoinsController->actionIndex()
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('coins/index', Array)
+#10 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/backend/web/index.php(16): yii\base\Application->run()
+#12 {main}
+2017-12-29 23:29:33 [::1][-][-][info][application] $_GET = [
+    'CoinsSearch' => [
+        'id' => ''
+        'icon' => ''
+        'name' => 'e'
+        'quan' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    'advanced-frontend' => '1b6895ddd8c89b4fcce2c03fe4147d6c'
+    '_csrf-backend' => 'd17a8c65174724c68d188f8519f74c34b39e410d1851fb5a30ee4e04229e3726a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"qhRs0YBPO2Qm2z03LY9lyNOFgOyCht8I\";}'
+    'advanced-backend' => '3ea8c1c540d38ee989dea8027a5fcf41'
+    '_csrf-frontend' => '70b4348e13deb0ad608222ec3d46ae5436f4a7c457d48097f778a83f4083b412a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Hm8FL5jST7q-KvlPLD4_QMBug8rEBEFb\";}'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; advanced-frontend=1b6895ddd8c89b4fcce2c03fe4147d6c; _csrf-backend=d17a8c65174724c68d188f8519f74c34b39e410d1851fb5a30ee4e04229e3726a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22qhRs0YBPO2Qm2z03LY9lyNOFgOyCht8I%22%3B%7D; advanced-backend=3ea8c1c540d38ee989dea8027a5fcf41; _csrf-frontend=70b4348e13deb0ad608222ec3d46ae5436f4a7c457d48097f778a83f4083b412a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Hm8FL5jST7q-KvlPLD4_QMBug8rEBEFb%22%3B%7D; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_REFERER' => 'http://localhost/admin/coins/index?page=39'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/backend/web/index.php'
+    'REMOTE_PORT' => '49425'
+    'REDIRECT_QUERY_STRING' => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'REDIRECT_URL' => '/backend/web/coins/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'REQUEST_URI' => '/admin/coins/index?CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1514586573.78
+    'REQUEST_TIME' => 1514586573
+    'argv' => [
+        0 => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    ]
+    'argc' => 1
+]
+2017-12-29 23:30:08 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in /Applications/MAMP/htdocs/backend/models/CoinsSearch.php:68
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /Applications/MAMP/htdocs/backend/controllers/CoinsController.php(38): spl_autoload_call('backend\\models\\...')
+#2 [internal function]: backend\controllers\CoinsController->actionIndex()
+#3 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('coins/index', Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/backend/web/index.php(16): yii\base\Application->run()
+#9 {main}
+2017-12-29 23:30:08 [::1][-][-][info][application] $_GET = [
+    'CoinsSearch' => [
+        'id' => ''
+        'icon' => ''
+        'name' => 'e'
+        'quan' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    'advanced-frontend' => '1b6895ddd8c89b4fcce2c03fe4147d6c'
+    '_csrf-backend' => 'd17a8c65174724c68d188f8519f74c34b39e410d1851fb5a30ee4e04229e3726a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"qhRs0YBPO2Qm2z03LY9lyNOFgOyCht8I\";}'
+    'advanced-backend' => '3ea8c1c540d38ee989dea8027a5fcf41'
+    '_csrf-frontend' => '70b4348e13deb0ad608222ec3d46ae5436f4a7c457d48097f778a83f4083b412a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Hm8FL5jST7q-KvlPLD4_QMBug8rEBEFb\";}'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; advanced-frontend=1b6895ddd8c89b4fcce2c03fe4147d6c; _csrf-backend=d17a8c65174724c68d188f8519f74c34b39e410d1851fb5a30ee4e04229e3726a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22qhRs0YBPO2Qm2z03LY9lyNOFgOyCht8I%22%3B%7D; advanced-backend=3ea8c1c540d38ee989dea8027a5fcf41; _csrf-frontend=70b4348e13deb0ad608222ec3d46ae5436f4a7c457d48097f778a83f4083b412a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Hm8FL5jST7q-KvlPLD4_QMBug8rEBEFb%22%3B%7D; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_REFERER' => 'http://localhost/admin/coins/index?page=39'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/backend/web/index.php'
+    'REMOTE_PORT' => '49436'
+    'REDIRECT_QUERY_STRING' => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'REDIRECT_URL' => '/backend/web/coins/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'REQUEST_URI' => '/admin/coins/index?CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1514586608.37
+    'REQUEST_TIME' => 1514586608
+    'argv' => [
+        0 => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    ]
+    'argc' => 1
+]
+2017-12-29 23:30:08 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Applications/MAMP/htdocs/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Applications/MAMP/htdocs/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Applications/MAMP/htdocs/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2017-12-29 23:30:08 [::1][-][-][info][application] $_GET = [
+    'CoinsSearch' => [
+        'id' => ''
+        'icon' => ''
+        'name' => 'e'
+        'quan' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    'advanced-frontend' => '1b6895ddd8c89b4fcce2c03fe4147d6c'
+    '_csrf-backend' => 'd17a8c65174724c68d188f8519f74c34b39e410d1851fb5a30ee4e04229e3726a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"qhRs0YBPO2Qm2z03LY9lyNOFgOyCht8I\";}'
+    'advanced-backend' => '3ea8c1c540d38ee989dea8027a5fcf41'
+    '_csrf-frontend' => '70b4348e13deb0ad608222ec3d46ae5436f4a7c457d48097f778a83f4083b412a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Hm8FL5jST7q-KvlPLD4_QMBug8rEBEFb\";}'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; advanced-frontend=1b6895ddd8c89b4fcce2c03fe4147d6c; _csrf-backend=d17a8c65174724c68d188f8519f74c34b39e410d1851fb5a30ee4e04229e3726a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22qhRs0YBPO2Qm2z03LY9lyNOFgOyCht8I%22%3B%7D; advanced-backend=3ea8c1c540d38ee989dea8027a5fcf41; _csrf-frontend=70b4348e13deb0ad608222ec3d46ae5436f4a7c457d48097f778a83f4083b412a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Hm8FL5jST7q-KvlPLD4_QMBug8rEBEFb%22%3B%7D; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_REFERER' => 'http://localhost/admin/coins/index?page=39'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/backend/web/index.php'
+    'REMOTE_PORT' => '49436'
+    'REDIRECT_QUERY_STRING' => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'REDIRECT_URL' => '/backend/web/coins/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'REQUEST_URI' => '/admin/coins/index?CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1514586608.37
+    'REQUEST_TIME' => 1514586608
+    'argv' => [
+        0 => 'CoinsSearch%5Bid%5D=&CoinsSearch%5Bicon%5D=&CoinsSearch%5Bname%5D=e&CoinsSearch%5Bquan%5D='
+    ]
+    'argc' => 1
+]
+2017-12-31 14:32:58 [::1][-][8f1f88f16c80d8f489696f6990b70ef6][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Applications/MAMP/htdocs/backend/views/default/nav.php:12
+Stack trace:
+#0 /Applications/MAMP/htdocs/backend/views/default/nav.php(12): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Applications/M...', 12, Array)
+#1 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, NULL)
+#4 /Applications/MAMP/htdocs/backend/views/layouts/admin.php(80): yii\base\View->render('/default/nav')
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\CoinsController))
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="con...')
+#9 /Applications/MAMP/htdocs/backend/controllers/CoinsController.php(43): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\CoinsController->actionIndex()
+#11 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#14 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('coins/index', Array)
+#15 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/backend/web/index.php(16): yii\base\Application->run()
+#17 {main}
+2017-12-31 14:32:57 [::1][-][8f1f88f16c80d8f489696f6990b70ef6][info][application] $_COOKIE = [
+    '_csrf-frontend' => '840e82b2247e501b42d69c12f1413692872c56bcc315a1fb83312a0d4afa2811a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"05K64KaYM5nM8fJV6nP-a7GvmsKyKtmx\";}'
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    'advanced-frontend' => '3d2eb2194f6c71944da5a28ef2a256e3'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => '_csrf-frontend=840e82b2247e501b42d69c12f1413692872c56bcc315a1fb83312a0d4afa2811a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2205K64KaYM5nM8fJV6nP-a7GvmsKyKtmx%22%3B%7D; _identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; advanced-frontend=3d2eb2194f6c71944da5a28ef2a256e3; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_REFERER' => 'http://localhost/admin/coins/update?id=21'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/backend/web/index.php'
+    'REMOTE_PORT' => '65196'
+    'REDIRECT_URL' => '/backend/web/coins/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/coins/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1514727177.83
+    'REQUEST_TIME' => 1514727177
+    'argv' => []
+    'argc' => 0
+]
+2017-12-31 14:33:14 [::1][-][8f1f88f16c80d8f489696f6990b70ef6][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Applications/MAMP/htdocs/backend/views/default/nav.php:12
+Stack trace:
+#0 /Applications/MAMP/htdocs/backend/views/default/nav.php(12): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Applications/M...', 12, Array)
+#1 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, NULL)
+#4 /Applications/MAMP/htdocs/backend/views/layouts/admin.php(80): yii\base\View->render('/default/nav')
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\CoinsController))
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="con...')
+#9 /Applications/MAMP/htdocs/backend/controllers/CoinsController.php(43): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\CoinsController->actionIndex()
+#11 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#14 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('coins/index', Array)
+#15 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/backend/web/index.php(16): yii\base\Application->run()
+#17 {main}
+2017-12-31 14:33:14 [::1][-][8f1f88f16c80d8f489696f6990b70ef6][info][application] $_COOKIE = [
+    '_csrf-backend' => '9ac30c3f8d41ca567f42792d24442cc296ca0c3b31cf3d060eb99dc2265d6be0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BqpJHDUlc0Pb0NJaOI9Sof3RhU2l8IrY\";}'
+    'advanced-backend' => '8f1f88f16c80d8f489696f6990b70ef6'
+    '_csrf-frontend' => '840e82b2247e501b42d69c12f1413692872c56bcc315a1fb83312a0d4afa2811a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"05K64KaYM5nM8fJV6nP-a7GvmsKyKtmx\";}'
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    'advanced-frontend' => '3d2eb2194f6c71944da5a28ef2a256e3'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => '_csrf-backend=9ac30c3f8d41ca567f42792d24442cc296ca0c3b31cf3d060eb99dc2265d6be0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BqpJHDUlc0Pb0NJaOI9Sof3RhU2l8IrY%22%3B%7D; advanced-backend=8f1f88f16c80d8f489696f6990b70ef6; _csrf-frontend=840e82b2247e501b42d69c12f1413692872c56bcc315a1fb83312a0d4afa2811a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2205K64KaYM5nM8fJV6nP-a7GvmsKyKtmx%22%3B%7D; _identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; advanced-frontend=3d2eb2194f6c71944da5a28ef2a256e3; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/backend/web/index.php'
+    'REMOTE_PORT' => '65209'
+    'REDIRECT_URL' => '/backend/web/coins/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/coins/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1514727194.64
+    'REQUEST_TIME' => 1514727194
+    'argv' => []
+    'argc' => 0
+]
+2017-12-31 18:30:31 [::1][-][8f1f88f16c80d8f489696f6990b70ef6][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Applications/MAMP/htdocs/backend/views/default/nav.php:12
+Stack trace:
+#0 /Applications/MAMP/htdocs/backend/views/default/nav.php(12): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Applications/M...', 12, Array)
+#1 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, NULL)
+#4 /Applications/MAMP/htdocs/backend/views/layouts/admin.php(80): yii\base\View->render('/default/nav')
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\CoinsController))
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="con...')
+#9 /Applications/MAMP/htdocs/backend/controllers/CoinsController.php(43): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\CoinsController->actionIndex()
+#11 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#14 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('coins/index', Array)
+#15 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/backend/web/index.php(16): yii\base\Application->run()
+#17 {main}
+2017-12-31 18:30:31 [::1][-][8f1f88f16c80d8f489696f6990b70ef6][info][application] $_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    'advanced-frontend' => '57f285c7c62d5431e6cc3d472fbe965e'
+    '_csrf-backend' => '9ac30c3f8d41ca567f42792d24442cc296ca0c3b31cf3d060eb99dc2265d6be0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BqpJHDUlc0Pb0NJaOI9Sof3RhU2l8IrY\";}'
+    'advanced-backend' => '8f1f88f16c80d8f489696f6990b70ef6'
+    '_csrf-frontend' => '840e82b2247e501b42d69c12f1413692872c56bcc315a1fb83312a0d4afa2811a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"05K64KaYM5nM8fJV6nP-a7GvmsKyKtmx\";}'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; advanced-frontend=57f285c7c62d5431e6cc3d472fbe965e; _csrf-backend=9ac30c3f8d41ca567f42792d24442cc296ca0c3b31cf3d060eb99dc2265d6be0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BqpJHDUlc0Pb0NJaOI9Sof3RhU2l8IrY%22%3B%7D; advanced-backend=8f1f88f16c80d8f489696f6990b70ef6; _csrf-frontend=840e82b2247e501b42d69c12f1413692872c56bcc315a1fb83312a0d4afa2811a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2205K64KaYM5nM8fJV6nP-a7GvmsKyKtmx%22%3B%7D; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/backend/web/index.php'
+    'REMOTE_PORT' => '54920'
+    'REDIRECT_URL' => '/backend/web/coins/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/coins/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1514741431.14
+    'REQUEST_TIME' => 1514741431
+    'argv' => []
+    'argc' => 0
+]
+2018-01-04 17:28:08 [::1][-][f5f577e50116f986e0ead5643a08081e][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Applications/MAMP/htdocs/backend/views/default/nav.php:12
+Stack trace:
+#0 /Applications/MAMP/htdocs/backend/views/default/nav.php(12): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Applications/M...', 12, Array)
+#1 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, NULL)
+#4 /Applications/MAMP/htdocs/backend/views/layouts/admin.php(80): yii\base\View->render('/default/nav')
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\CoinsController))
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="con...')
+#9 /Applications/MAMP/htdocs/backend/controllers/CoinsController.php(43): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\CoinsController->actionIndex()
+#11 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#14 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('coins/index', Array)
+#15 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/backend/web/index.php(16): yii\base\Application->run()
+#17 {main}
+2018-01-04 17:28:08 [::1][-][f5f577e50116f986e0ead5643a08081e][info][application] $_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    'advanced-frontend' => '3e853ec576e2293e9974e25b9f42cc5b'
+    '_csrf-frontend' => 'f0a29d188dc5980ba7802e5ffa52825491b3afc4c31df6426f0d234a928f0bb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xlCM_x3xxZgrK1pjX_C51G1vWIpVLGw4\";}'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; advanced-frontend=3e853ec576e2293e9974e25b9f42cc5b; _csrf-frontend=f0a29d188dc5980ba7802e5ffa52825491b3afc4c31df6426f0d234a928f0bb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xlCM_x3xxZgrK1pjX_C51G1vWIpVLGw4%22%3B%7D; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/backend/web/index.php'
+    'REMOTE_PORT' => '54268'
+    'REDIRECT_URL' => '/backend/web/coins/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/coins/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1515083288.09
+    'REQUEST_TIME' => 1515083288
+    'argv' => []
+    'argc' => 0
+]
