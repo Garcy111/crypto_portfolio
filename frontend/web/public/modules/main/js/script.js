@@ -52,13 +52,19 @@ $(function() {
     };
 
     
-    $('#total_usd').click(function() {
-        $(this).hide();
-        $('#total_rub').show();
-    });
-    $('#total_rub').click(function() {
-        $(this).hide();
-        $('#total_usd').show();
+    // $('#total_usd').click(function() {
+    //     $(this).hide();
+    //     $('#total_rub').show();
+    // });
+    // $('#total_rub').click(function() {
+    //     $(this).hide();
+    //     $('#total_usd').show();
+    // });
+
+    $('.cur_active').mytoggle(function() {
+        $(this).parent().find('.cur_list').slideDown(150);
+    }, function() {
+        $(this).parent().find('.cur_list').slideUp(100);
     });
 
     $('.body-curency .col-7').mytoggle(function() {

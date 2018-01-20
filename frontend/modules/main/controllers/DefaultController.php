@@ -19,7 +19,7 @@ class DefaultController extends Controller
         ];
     }
  
-    public function actionIndex()
+    public function actionIndex($cur = "USD")
     {
         if (Yii::$app->user->id == null) {
             return $this->redirect('/login');
@@ -28,7 +28,7 @@ class DefaultController extends Controller
         $coins_user = $coins_users_model->getCoinsByUser();
 
         $coins_model = new Coins();
-        $data_coins = $coins_model->getDataCoins($coins_user);
+        $data_coins = $coins_model->getDataCoins($coins_user, $cur);
 
         // set the data in session
         $session = Yii::$app->session;

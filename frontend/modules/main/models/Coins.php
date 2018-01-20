@@ -32,8 +32,8 @@ class Coins extends ActiveRecord {
         ];
     }
 
-    public function getDataCoins($coins) {
-        $all_coins = file_get_contents("https://api.coinmarketcap.com/v1/ticker/?limit=200");
+    public function getDataCoins($coins, $cur) {
+        $all_coins = file_get_contents("https://api.coinmarketcap.com/v1/ticker/?limit=200&convert=" . $cur);
         $all_coins = json_decode($all_coins);
 
         $data_coins = [];
@@ -57,7 +57,20 @@ class Coins extends ActiveRecord {
 
             $coin_name = $coin[0]->id;
             $coin_symbol = $coin[0]->symbol;
-            $coin_price = $coin[0]->price_usd;
+
+            if ($cur == 'USD') {
+                $coin_price = $coin[0]->price_usd;
+            }
+            if ($cur == 'RUB') {
+                $coin_price = $coin[0]->price_rub;
+            }
+            if ($cur == 'EUR') {
+                $coin_price = $coin[0]->price_eur;
+            }
+            if ($cur == 'CNY') {
+                $coin_price = $coin[0]->price_cny;
+            }
+
             $coin_percent = $coin[0]->percent_change_24h;
             $coin_count = $coins[$i]['quan'];
             $coin_usd = $coin_price * $coin_count;

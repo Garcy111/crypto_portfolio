@@ -15,21 +15,18 @@ $this->title = 'Portfolio';
 
     // $start = microtime(true);
     // echo 'Время выполнения скрипта: '.(microtime(true) - $start).' сек.';
+    
+    // Get curency
+    $cur = Yii::$app->request->get('cur');
+    if (empty($cur)) $cur = "USD";
 
     // Sort
-    function cmp($a, $b)  
+    function cmp($a, $b)
     { 
     // return strnatcmp($a["usd"], $b["usd"]); //по возрастанию
     return strnatcmp($b["usd"], $a["usd"]); //по убыванию
     } 
     usort($data_coins, "cmp");
-
-
-    // Курс долара к рублю.
-    $dollar = 57.6;
-    $usd_rub = $dollar;
-    // Вложено в крипту
-    // $invested = 1200;
 
     $global = file_get_contents("https://api.coinmarketcap.com/v1/global/");
     $global = json_decode($global);
@@ -49,22 +46,26 @@ $this->title = 'Portfolio';
 <div class="container">
     <div class="top_bar">
         <div class="item">
-            <div class="value">Market Cap: <span>$<?= $total_market; ?></span> | </div>
+            <div class="value">Market Cap: <span>$<?= number_format($total_market, 0, '', ' '); ?></span> | </div>
         </div>
         <div class="item">
-            <div class="value">24h Vol: <span>$<?= $total_market_24h; ?></span> | </div>
+            <div class="value">24h Vol: <span>$<?= number_format($total_market_24h, 0, '', ' '); ?></span> | </div>
         </div>
         <div class="item">
             <div class="value">BTC Dominance: <span><?= $bitcoin_percentage; ?>%</span></div>
         </div>
-        <div class="item">
-            <div class="value">Dollar: <span><?= $dollar; ?> rub</span></div>
-        </div>
         <a class="logout" href="/user/default/logout/">Logout</a>
     </div>
 
-    <h2 class="total_sum" id="total_usd">$<?= number_format($total_money, 0, '.', ' '); ?></h2>
-    <h2 class="total_sum" id="total_rub"><?= number_format(floor($total_money * $usd_rub), 0, '.', ' '); ?> руб.</h2>
+    <h2 class="total_sum" id="total_usd">
+        <?php 
+            if ($cur == 'USD') echo "$";
+            if ($cur == 'RUB') echo "₽ ";
+            if ($cur == 'EUR') echo "€ ";
+            if ($cur == 'CNY') echo "¥ ";
+            echo number_format($total_money, 0, '.', ' ');
+        ?>
+    </h2>
 
     
     <div class="left_col">
@@ -74,6 +75,16 @@ $this->title = 'Portfolio';
         <?= Html::input('text', 'query', '', ['class' => 'search_field', 'placeholder' => 'Search']) ?>
         <?= Html::submitButton('', ['class' => 'sendSearch', 'name' => 'send_search']) ?>
     <?= Html::endForm() ?>
+
+    <div class="select_curency">
+        <div class="cur_active"><?= $cur; ?></div>
+        <div class="cur_list">
+            <?= Html::a('USD', ['/main/default/index/', 'cur' => 'USD'], ['class' => 'cur', 'data-pjax' => 0]); ?>
+            <?= Html::a('EUR', ['/main/default/index/', 'cur' => 'EUR'], ['class' => 'cur', 'data-pjax' => 0]); ?>
+            <?= Html::a('RUB', ['/main/default/index/', 'cur' => 'RUB'], ['class' => 'cur', 'data-pjax' => 0]); ?>
+            <?= Html::a('CNY', ['/main/default/index/', 'cur' => 'CNY'], ['class' => 'cur', 'data-pjax' => 0]); ?>
+        </div>
+    </div>
 
     <div class="clear"></div>
 
@@ -128,7 +139,15 @@ $this->title = 'Portfolio';
                 <p><?= $data_coins[$i]['symbol']; ?></p> 
             </div>
             <div class="col col-2">
-                <p>$<?= number_format($data_coins[$i]['price'], 3, '.', ''); ?></p>
+                <p>
+                <?php 
+                    if ($cur == 'USD') echo "$";
+                    if ($cur == 'RUB') echo " ₽";
+                    if ($cur == 'EUR') echo "€";
+                    if ($cur == 'CNY') echo "¥";
+                    echo number_format($data_coins[$i]['price'], 2, '.', ' ');
+                ?>
+                </p>
             </div>
             <div class="col col-3">
                 <p class="proc <?php if ($data_coins[$i]['status']) { echo 'red'; } ?>"><?= $data_coins[$i]['percent']; ?>%</p>
@@ -137,7 +156,15 @@ $this->title = 'Portfolio';
                 <p><?= $data_coins[$i]['count']; ?></p>
             </div>
             <div class="col col-5">
-                <p>$<?= number_format($data_coins[$i]['usd'], 2, '.', ''); ?></p>
+                <p>
+                    <?php 
+                        if ($cur == 'USD') echo "$";
+                        if ($cur == 'RUB') echo " ₽";
+                        if ($cur == 'EUR') echo "€";
+                        if ($cur == 'CNY') echo "¥";
+                        echo number_format($data_coins[$i]['usd'], 2, '.', ' ');
+                    ?>   
+                </p>
             </div>
             <div class="col col-6">
                 <?php
