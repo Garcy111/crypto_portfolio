@@ -77,7 +77,7 @@ $this->title = 'Portfolio';
     <?= Html::endForm() ?>
 
     <div class="select_curency">
-        <div class="cur_active"><?= $cur; ?></div>
+        <div class="cur_active open"><?= $cur; ?></div>
         <div class="cur_list">
             <?= Html::a('USD', ['/main/default/index/', 'cur' => 'USD'], ['class' => 'cur', 'data-pjax' => 0]); ?>
             <?= Html::a('EUR', ['/main/default/index/', 'cur' => 'EUR'], ['class' => 'cur', 'data-pjax' => 0]); ?>

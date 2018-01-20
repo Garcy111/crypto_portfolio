@@ -61,10 +61,16 @@ $(function() {
     //     $('#total_usd').show();
     // });
 
-    $('.cur_active').mytoggle(function() {
+    $(document).on('click', '.cur_active.open', function() {
         $(this).parent().find('.cur_list').slideDown(150);
-    }, function() {
+        $(this).removeClass('open');
+        $(this).addClass('close');
+    });
+
+    $(document).on('click', '.cur_active.close', function() {
         $(this).parent().find('.cur_list').slideUp(100);
+        $(this).removeClass('close');
+        $(this).addClass('open');
     });
 
     $('.body-curency .col-7').mytoggle(function() {
