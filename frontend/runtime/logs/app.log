@@ -24115,3 +24115,911 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-01-21 09:14:20 [::1][1][508862731d54a148b6cff80aaf16ecc6][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Applications/MAMP/htdocs/frontend/modules/main/models/Coins.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', '/Applications/M...', 36, Array)
+#1 /Applications/MAMP/htdocs/frontend/modules/main/models/Coins.php(36): file_get_contents('https://api.coi...')
+#2 /Applications/MAMP/htdocs/frontend/modules/main/controllers/DefaultController.php(31): frontend\modules\main\models\Coins->getDataCoins(Array, 'USD')
+#3 [internal function]: frontend\modules\main\controllers\DefaultController->actionIndex('USD')
+#4 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('main/default/in...', Array)
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2018-01-21 09:13:50 [::1][1][508862731d54a148b6cff80aaf16ecc6][info][application] $_GET = [
+    'cur' => 'USD'
+]
+
+$_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    '_csrf-frontend' => 'd35e1fb64fe62452419cf68b6eaf341d2259dadbc17188e1d9d545ae8a395e78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RG11w-0-21sM6vmX6FEHp1SJpQ8cRVx2\";}'
+    'advanced-frontend' => '508862731d54a148b6cff80aaf16ecc6'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'data_coins' => [
+        0 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/qlink.png'
+            'symbol' => 'QLC'
+            'name' => 'qlink'
+            'price' => '0.478618'
+            'percent' => '5.49'
+            'count' => '500'
+            'usd' => 239.309
+            'status' => false
+            'color' => '#F9640D'
+        ]
+        1 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/nebulas-token.png'
+            'symbol' => 'NAS'
+            'name' => 'nebulas-token'
+            'price' => '12.3991'
+            'percent' => '49.76'
+            'count' => '607.06'
+            'usd' => 7526.997646
+            'status' => false
+            'color' => '#5BEB2E'
+        ]
+        2 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/red-pulse.png'
+            'symbol' => 'RPX'
+            'name' => 'red-pulse'
+            'price' => '0.366206'
+            'percent' => '37.85'
+            'count' => '1424'
+            'usd' => 521.477344
+            'status' => false
+            'color' => '#9773EF'
+        ]
+        3 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/raiden-network-token.png'
+            'symbol' => 'RDN'
+            'name' => 'raiden-network-token'
+            'price' => '5.17978'
+            'percent' => '10.96'
+            'count' => '100'
+            'usd' => 517.978
+            'status' => false
+            'color' => '#4AAC2F'
+        ]
+        4 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/quantstamp.png'
+            'symbol' => 'QSP'
+            'name' => 'quantstamp'
+            'price' => '0.529736'
+            'percent' => '6.12'
+            'count' => '4404'
+            'usd' => 2332.957344
+            'status' => false
+            'color' => '#056CE1'
+        ]
+        5 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/aelf.png'
+            'symbol' => 'ELF'
+            'name' => 'aelf'
+            'price' => '1.99728'
+            'percent' => '27.11'
+            'count' => '202'
+            'usd' => 403.45056
+            'status' => false
+            'color' => '#D309B8'
+        ]
+        6 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/request-network.png'
+            'symbol' => 'REQ'
+            'name' => 'request-network'
+            'price' => '0.612478'
+            'percent' => '7.26'
+            'count' => '1000'
+            'usd' => 612.478
+            'status' => false
+            'color' => '#64A9C5'
+        ]
+        7 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/aion.png'
+            'symbol' => 'AION'
+            'name' => 'aion'
+            'price' => '6.57609'
+            'percent' => '21.49'
+            'count' => '90.65'
+            'usd' => 596.1225585
+            'status' => false
+            'color' => '#A1CAF8'
+        ]
+        8 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/binance-coin.png'
+            'symbol' => 'BNB'
+            'name' => 'binance-coin'
+            'price' => '16.4443'
+            'percent' => '12.47'
+            'count' => '248.16'
+            'usd' => 4080.817488
+            'status' => false
+            'color' => '#B36103'
+        ]
+        9 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/omisego.png'
+            'symbol' => 'OMG'
+            'name' => 'omisego'
+            'price' => '19.8746'
+            'percent' => '10.74'
+            'count' => '14.74'
+            'usd' => 292.951604
+            'status' => false
+            'color' => '#C099B2'
+        ]
+        10 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/icon.png'
+            'symbol' => 'ICX'
+            'name' => 'icon'
+            'price' => '10.4585'
+            'percent' => '29.26'
+            'count' => '1000'
+            'usd' => 10458.5
+            'status' => false
+            'color' => '#DFDB0B'
+        ]
+        11 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/neo.png'
+            'symbol' => 'NEO'
+            'name' => 'neo'
+            'price' => '151.24'
+            'percent' => '10.1'
+            'count' => '10'
+            'usd' => 1512.4
+            'status' => false
+            'color' => '#26BC66'
+        ]
+        12 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/iota.png'
+            'symbol' => 'MIOTA'
+            'name' => 'iota'
+            'price' => '3.09625'
+            'percent' => '16.67'
+            'count' => '126.5'
+            'usd' => 391.675625
+            'status' => false
+            'color' => '#9A3676'
+        ]
+        13 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png'
+            'symbol' => 'ETH'
+            'name' => 'ethereum'
+            'price' => '1161.37'
+            'percent' => '12.33'
+            'count' => '1'
+            'usd' => 1161.37
+            'status' => false
+            'color' => '#311C9E'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; _csrf-frontend=d35e1fb64fe62452419cf68b6eaf341d2259dadbc17188e1d9d545ae8a395e78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RG11w-0-21sM6vmX6FEHp1SJpQ8cRVx2%22%3B%7D; advanced-frontend=508862731d54a148b6cff80aaf16ecc6; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_REFERER' => 'http://localhost/?cur=RUB'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/frontend/web/index.php'
+    'REMOTE_PORT' => '56653'
+    'REDIRECT_QUERY_STRING' => 'cur=USD'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'cur=USD'
+    'REQUEST_URI' => '/?cur=USD'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516522430.2
+    'REQUEST_TIME' => 1516522430
+    'argv' => [
+        0 => 'cur=USD'
+    ]
+    'argc' => 1
+]
+2018-01-21 09:55:24 [::1][1][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://api.coinmarketcap.com/v1/global/): failed to open stream: Operation timed out in /Applications/MAMP/htdocs/frontend/modules/main/views/default/index.php:31
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', '/Applications/M...', 31, Array)
+#1 /Applications/MAMP/htdocs/frontend/modules/main/views/default/index.php(31): file_get_contents('https://api.coi...')
+#2 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\modules\main\controllers\DefaultController))
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(frontend\modules\main\controllers\DefaultController))
+#6 /Applications/MAMP/htdocs/frontend/modules/main/controllers/DefaultController.php(39): yii\base\Controller->render('index', Array)
+#7 [internal function]: frontend\modules\main\controllers\DefaultController->actionIndex('USD')
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#11 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('main/default/in...', Array)
+#12 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+2018-01-21 09:54:00 [::1][1][-][info][application] $_GET = [
+    'cur' => 'USD'
+]
+
+$_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    '_csrf-frontend' => 'd35e1fb64fe62452419cf68b6eaf341d2259dadbc17188e1d9d545ae8a395e78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RG11w-0-21sM6vmX6FEHp1SJpQ8cRVx2\";}'
+    'advanced-frontend' => '508862731d54a148b6cff80aaf16ecc6'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'data_coins' => [
+        0 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/qlink.png'
+            'symbol' => 'QLC'
+            'name' => 'qlink'
+            'price' => '0.443287'
+            'percent' => '-5.88'
+            'count' => '500'
+            'usd' => 221.6435
+            'status' => true
+            'color' => '#F9640D'
+        ]
+        1 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/nebulas-token.png'
+            'symbol' => 'NAS'
+            'name' => 'nebulas-token'
+            'price' => '9.92332'
+            'percent' => '4.57'
+            'count' => '607.06'
+            'usd' => 6024.0506392
+            'status' => false
+            'color' => '#5BEB2E'
+        ]
+        2 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/red-pulse.png'
+            'symbol' => 'RPX'
+            'name' => 'red-pulse'
+            'price' => '0.315007'
+            'percent' => '3.82'
+            'count' => '1424'
+            'usd' => 448.569968
+            'status' => false
+            'color' => '#9773EF'
+        ]
+        3 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/raiden-network-token.png'
+            'symbol' => 'RDN'
+            'name' => 'raiden-network-token'
+            'price' => '4.68639'
+            'percent' => '-10.4'
+            'count' => '100'
+            'usd' => 468.639
+            'status' => true
+            'color' => '#4AAC2F'
+        ]
+        4 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/quantstamp.png'
+            'symbol' => 'QSP'
+            'name' => 'quantstamp'
+            'price' => '0.466448'
+            'percent' => '-9.55'
+            'count' => '4404'
+            'usd' => 2054.236992
+            'status' => true
+            'color' => '#056CE1'
+        ]
+        5 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/aelf.png'
+            'symbol' => 'ELF'
+            'name' => 'aelf'
+            'price' => '1.65192'
+            'percent' => '-5.97'
+            'count' => '202'
+            'usd' => 333.68784
+            'status' => true
+            'color' => '#D309B8'
+        ]
+        6 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/request-network.png'
+            'symbol' => 'REQ'
+            'name' => 'request-network'
+            'price' => '0.527426'
+            'percent' => '-10.67'
+            'count' => '1000'
+            'usd' => 527.426
+            'status' => true
+            'color' => '#64A9C5'
+        ]
+        7 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/aion.png'
+            'symbol' => 'AION'
+            'name' => 'aion'
+            'price' => '5.81179'
+            'percent' => '0.42'
+            'count' => '90.65'
+            'usd' => 526.8387635
+            'status' => false
+            'color' => '#A1CAF8'
+        ]
+        8 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/binance-coin.png'
+            'symbol' => 'BNB'
+            'name' => 'binance-coin'
+            'price' => '14.6401'
+            'percent' => '-8.54'
+            'count' => '248.16'
+            'usd' => 3633.087216
+            'status' => true
+            'color' => '#B36103'
+        ]
+        9 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/omisego.png'
+            'symbol' => 'OMG'
+            'name' => 'omisego'
+            'price' => '18.1535'
+            'percent' => '-6.43'
+            'count' => '14.74'
+            'usd' => 267.58259
+            'status' => true
+            'color' => '#C099B2'
+        ]
+        10 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/icon.png'
+            'symbol' => 'ICX'
+            'name' => 'icon'
+            'price' => '8.92772'
+            'percent' => '-6.58'
+            'count' => '1000'
+            'usd' => 8927.72
+            'status' => true
+            'color' => '#DFDB0B'
+        ]
+        11 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/neo.png'
+            'symbol' => 'NEO'
+            'name' => 'neo'
+            'price' => '138.626'
+            'percent' => '-4.05'
+            'count' => '10'
+            'usd' => 1386.26
+            'status' => true
+            'color' => '#26BC66'
+        ]
+        12 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/iota.png'
+            'symbol' => 'MIOTA'
+            'name' => 'iota'
+            'price' => '2.8633'
+            'percent' => '-6.24'
+            'count' => '126.5'
+            'usd' => 362.20745
+            'status' => true
+            'color' => '#9A3676'
+        ]
+        13 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png'
+            'symbol' => 'ETH'
+            'name' => 'ethereum'
+            'price' => '1086.54'
+            'percent' => '-3.64'
+            'count' => '1'
+            'usd' => 1086.54
+            'status' => true
+            'color' => '#311C9E'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; _csrf-frontend=d35e1fb64fe62452419cf68b6eaf341d2259dadbc17188e1d9d545ae8a395e78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RG11w-0-21sM6vmX6FEHp1SJpQ8cRVx2%22%3B%7D; advanced-frontend=508862731d54a148b6cff80aaf16ecc6; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_REFERER' => 'http://localhost/?cur=RUB'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/frontend/web/index.php'
+    'REMOTE_PORT' => '57257'
+    'REDIRECT_QUERY_STRING' => 'cur=USD'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'cur=USD'
+    'REQUEST_URI' => '/?cur=USD'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516524840.3
+    'REQUEST_TIME' => 1516524840
+    'argv' => [
+        0 => 'cur=USD'
+    ]
+    'argc' => 1
+]
+2018-01-21 10:32:35 [::1][1][508862731d54a148b6cff80aaf16ecc6][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Applications/MAMP/htdocs/frontend/modules/main/models/Coins.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', '/Applications/M...', 36, Array)
+#1 /Applications/MAMP/htdocs/frontend/modules/main/models/Coins.php(36): file_get_contents('https://api.coi...')
+#2 /Applications/MAMP/htdocs/frontend/modules/main/controllers/DefaultController.php(31): frontend\modules\main\models\Coins->getDataCoins(Array, 'USD')
+#3 [internal function]: frontend\modules\main\controllers\DefaultController->actionIndex('USD')
+#4 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('main/default/in...', Array)
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2018-01-21 10:32:05 [::1][1][508862731d54a148b6cff80aaf16ecc6][info][application] $_GET = [
+    'cur' => 'USD'
+]
+
+$_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    '_csrf-frontend' => 'd35e1fb64fe62452419cf68b6eaf341d2259dadbc17188e1d9d545ae8a395e78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RG11w-0-21sM6vmX6FEHp1SJpQ8cRVx2\";}'
+    'advanced-frontend' => '508862731d54a148b6cff80aaf16ecc6'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'data_coins' => [
+        0 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/qlink.png'
+            'symbol' => 'QLC'
+            'name' => 'qlink'
+            'price' => '0.443287'
+            'percent' => '-5.88'
+            'count' => '500'
+            'usd' => 221.6435
+            'status' => true
+            'color' => '#F9640D'
+        ]
+        1 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/nebulas-token.png'
+            'symbol' => 'NAS'
+            'name' => 'nebulas-token'
+            'price' => '9.92332'
+            'percent' => '4.57'
+            'count' => '607.06'
+            'usd' => 6024.0506392
+            'status' => false
+            'color' => '#5BEB2E'
+        ]
+        2 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/red-pulse.png'
+            'symbol' => 'RPX'
+            'name' => 'red-pulse'
+            'price' => '0.315007'
+            'percent' => '3.82'
+            'count' => '1424'
+            'usd' => 448.569968
+            'status' => false
+            'color' => '#9773EF'
+        ]
+        3 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/raiden-network-token.png'
+            'symbol' => 'RDN'
+            'name' => 'raiden-network-token'
+            'price' => '4.68639'
+            'percent' => '-10.4'
+            'count' => '100'
+            'usd' => 468.639
+            'status' => true
+            'color' => '#4AAC2F'
+        ]
+        4 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/quantstamp.png'
+            'symbol' => 'QSP'
+            'name' => 'quantstamp'
+            'price' => '0.466448'
+            'percent' => '-9.55'
+            'count' => '4404'
+            'usd' => 2054.236992
+            'status' => true
+            'color' => '#056CE1'
+        ]
+        5 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/aelf.png'
+            'symbol' => 'ELF'
+            'name' => 'aelf'
+            'price' => '1.65192'
+            'percent' => '-5.97'
+            'count' => '202'
+            'usd' => 333.68784
+            'status' => true
+            'color' => '#D309B8'
+        ]
+        6 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/request-network.png'
+            'symbol' => 'REQ'
+            'name' => 'request-network'
+            'price' => '0.527426'
+            'percent' => '-10.67'
+            'count' => '1000'
+            'usd' => 527.426
+            'status' => true
+            'color' => '#64A9C5'
+        ]
+        7 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/aion.png'
+            'symbol' => 'AION'
+            'name' => 'aion'
+            'price' => '5.81179'
+            'percent' => '0.42'
+            'count' => '90.65'
+            'usd' => 526.8387635
+            'status' => false
+            'color' => '#A1CAF8'
+        ]
+        8 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/binance-coin.png'
+            'symbol' => 'BNB'
+            'name' => 'binance-coin'
+            'price' => '14.6401'
+            'percent' => '-8.54'
+            'count' => '248.16'
+            'usd' => 3633.087216
+            'status' => true
+            'color' => '#B36103'
+        ]
+        9 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/omisego.png'
+            'symbol' => 'OMG'
+            'name' => 'omisego'
+            'price' => '18.1535'
+            'percent' => '-6.43'
+            'count' => '14.74'
+            'usd' => 267.58259
+            'status' => true
+            'color' => '#C099B2'
+        ]
+        10 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/icon.png'
+            'symbol' => 'ICX'
+            'name' => 'icon'
+            'price' => '8.92772'
+            'percent' => '-6.58'
+            'count' => '1000'
+            'usd' => 8927.72
+            'status' => true
+            'color' => '#DFDB0B'
+        ]
+        11 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/neo.png'
+            'symbol' => 'NEO'
+            'name' => 'neo'
+            'price' => '138.626'
+            'percent' => '-4.05'
+            'count' => '10'
+            'usd' => 1386.26
+            'status' => true
+            'color' => '#26BC66'
+        ]
+        12 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/iota.png'
+            'symbol' => 'MIOTA'
+            'name' => 'iota'
+            'price' => '2.8633'
+            'percent' => '-6.24'
+            'count' => '126.5'
+            'usd' => 362.20745
+            'status' => true
+            'color' => '#9A3676'
+        ]
+        13 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png'
+            'symbol' => 'ETH'
+            'name' => 'ethereum'
+            'price' => '1086.54'
+            'percent' => '-3.64'
+            'count' => '1'
+            'usd' => 1086.54
+            'status' => true
+            'color' => '#311C9E'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; _csrf-frontend=d35e1fb64fe62452419cf68b6eaf341d2259dadbc17188e1d9d545ae8a395e78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RG11w-0-21sM6vmX6FEHp1SJpQ8cRVx2%22%3B%7D; advanced-frontend=508862731d54a148b6cff80aaf16ecc6; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_REFERER' => 'http://localhost/?cur=RUB'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/frontend/web/index.php'
+    'REMOTE_PORT' => '57597'
+    'REDIRECT_QUERY_STRING' => 'cur=USD'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'cur=USD'
+    'REQUEST_URI' => '/?cur=USD'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516527125.44
+    'REQUEST_TIME' => 1516527125
+    'argv' => [
+        0 => 'cur=USD'
+    ]
+    'argc' => 1
+]
+2018-01-21 11:27:23 [::1][1][508862731d54a148b6cff80aaf16ecc6][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Applications/MAMP/htdocs/frontend/modules/main/models/Coins.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', '/Applications/M...', 36, Array)
+#1 /Applications/MAMP/htdocs/frontend/modules/main/models/Coins.php(36): file_get_contents('https://api.coi...')
+#2 /Applications/MAMP/htdocs/frontend/modules/main/controllers/DefaultController.php(31): frontend\modules\main\models\Coins->getDataCoins(Array, 'USD')
+#3 [internal function]: frontend\modules\main\controllers\DefaultController->actionIndex('USD')
+#4 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('main/default/in...', Array)
+#8 /Applications/MAMP/htdocs/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2018-01-21 11:26:53 [::1][1][508862731d54a148b6cff80aaf16ecc6][info][application] $_GET = [
+    'cur' => 'USD'
+]
+
+$_COOKIE = [
+    '_identity' => '1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH\",2592000]\";}'
+    '_csrf-frontend' => 'd35e1fb64fe62452419cf68b6eaf341d2259dadbc17188e1d9d545ae8a395e78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"RG11w-0-21sM6vmX6FEHp1SJpQ8cRVx2\";}'
+    'advanced-frontend' => '508862731d54a148b6cff80aaf16ecc6'
+    'wp-settings-1' => 'libraryContent=browse'
+    'wp-settings-time-1' => '1513877266'
+    '_ym_uid' => '1512850969719565773'
+    'jv_visits_count_CqX7eXzuGM' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'data_coins' => [
+        0 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/qlink.png'
+            'symbol' => 'QLC'
+            'name' => 'qlink'
+            'price' => '0.41727'
+            'percent' => '-10.65'
+            'count' => '500'
+            'usd' => 208.635
+            'status' => true
+            'color' => '#F9640D'
+        ]
+        1 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/nebulas-token.png'
+            'symbol' => 'NAS'
+            'name' => 'nebulas-token'
+            'price' => '9.88271'
+            'percent' => '2.54'
+            'count' => '607.06'
+            'usd' => 5999.3979326
+            'status' => false
+            'color' => '#5BEB2E'
+        ]
+        2 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/red-pulse.png'
+            'symbol' => 'RPX'
+            'name' => 'red-pulse'
+            'price' => '0.316462'
+            'percent' => '-1.87'
+            'count' => '1424'
+            'usd' => 450.641888
+            'status' => true
+            'color' => '#9773EF'
+        ]
+        3 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/raiden-network-token.png'
+            'symbol' => 'RDN'
+            'name' => 'raiden-network-token'
+            'price' => '4.62163'
+            'percent' => '-10.91'
+            'count' => '100'
+            'usd' => 462.163
+            'status' => true
+            'color' => '#4AAC2F'
+        ]
+        4 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/quantstamp.png'
+            'symbol' => 'QSP'
+            'name' => 'quantstamp'
+            'price' => '0.450281'
+            'percent' => '-13.18'
+            'count' => '4404'
+            'usd' => 1983.037524
+            'status' => true
+            'color' => '#056CE1'
+        ]
+        5 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/aelf.png'
+            'symbol' => 'ELF'
+            'name' => 'aelf'
+            'price' => '1.575'
+            'percent' => '-10.79'
+            'count' => '202'
+            'usd' => 318.15
+            'status' => true
+            'color' => '#D309B8'
+        ]
+        6 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/request-network.png'
+            'symbol' => 'REQ'
+            'name' => 'request-network'
+            'price' => '0.518501'
+            'percent' => '-12.49'
+            'count' => '1000'
+            'usd' => 518.501
+            'status' => true
+            'color' => '#64A9C5'
+        ]
+        7 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/aion.png'
+            'symbol' => 'AION'
+            'name' => 'aion'
+            'price' => '5.82585'
+            'percent' => '1.1'
+            'count' => '90.65'
+            'usd' => 528.1133025
+            'status' => false
+            'color' => '#A1CAF8'
+        ]
+        8 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/binance-coin.png'
+            'symbol' => 'BNB'
+            'name' => 'binance-coin'
+            'price' => '14.3254'
+            'percent' => '-9.56'
+            'count' => '248.16'
+            'usd' => 3554.991264
+            'status' => true
+            'color' => '#B36103'
+        ]
+        9 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/omisego.png'
+            'symbol' => 'OMG'
+            'name' => 'omisego'
+            'price' => '17.7851'
+            'percent' => '-8.1'
+            'count' => '14.74'
+            'usd' => 262.152374
+            'status' => true
+            'color' => '#C099B2'
+        ]
+        10 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/icon.png'
+            'symbol' => 'ICX'
+            'name' => 'icon'
+            'price' => '9.25528'
+            'percent' => '-4.55'
+            'count' => '1000'
+            'usd' => 9255.28
+            'status' => true
+            'color' => '#DFDB0B'
+        ]
+        11 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/neo.png'
+            'symbol' => 'NEO'
+            'name' => 'neo'
+            'price' => '136.418'
+            'percent' => '-4.86'
+            'count' => '10'
+            'usd' => 1364.18
+            'status' => true
+            'color' => '#26BC66'
+        ]
+        12 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/iota.png'
+            'symbol' => 'MIOTA'
+            'name' => 'iota'
+            'price' => '2.84353'
+            'percent' => '-7.52'
+            'count' => '126.5'
+            'usd' => 359.706545
+            'status' => true
+            'color' => '#9A3676'
+        ]
+        13 => [
+            'icon' => 'https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png'
+            'symbol' => 'ETH'
+            'name' => 'ethereum'
+            'price' => '1068.41'
+            'percent' => '-5.08'
+            'count' => '1'
+            'usd' => 1068.41
+            'status' => true
+            'color' => '#311C9E'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_COOKIE' => '_identity=1efa1ff7ebc4f24dd3ba7bd7307998b2e61ec314761fd738aa6a4bb70c4ac5e3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22VfXlNEbMCZGZ1ChSNtXuy038d6zjDoNH%22%2C2592000%5D%22%3B%7D; _csrf-frontend=d35e1fb64fe62452419cf68b6eaf341d2259dadbc17188e1d9d545ae8a395e78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22RG11w-0-21sM6vmX6FEHp1SJpQ8cRVx2%22%3B%7D; advanced-frontend=508862731d54a148b6cff80aaf16ecc6; wp-settings-1=libraryContent%3Dbrowse; wp-settings-time-1=1513877266; _ym_uid=1512850969719565773; jv_visits_count_CqX7eXzuGM=1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+    'HTTP_REFERER' => 'http://localhost/?cur=RUB'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/frontend/web/index.php'
+    'REMOTE_PORT' => '58131'
+    'REDIRECT_QUERY_STRING' => 'cur=USD'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'cur=USD'
+    'REQUEST_URI' => '/?cur=USD'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516530413.33
+    'REQUEST_TIME' => 1516530413
+    'argv' => [
+        0 => 'cur=USD'
+    ]
+    'argc' => 1
+]

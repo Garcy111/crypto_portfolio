@@ -17,10 +17,10 @@ MainAsset::register($this);
 
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=10">
-    <meta name="description" content="description">
-	<meta name="keywords" content="keywords">
-	<meta name="author" content="author">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+    <meta name="description" content="crypto portfolio">
+	<meta name="keywords" content="crypto, portfolio">
+	<meta name="author" content="garcy">
+    <meta name="viewport" content="width=720px, initial-scale=2, maximum-scale=1">
 
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>

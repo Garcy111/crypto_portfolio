@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	min-width: 720px;
 	color: #180014;
 	background: #444;
 	background: url('../images/bg2.jpg') center no-repeat;
@@ -19,12 +20,12 @@ canvas#chart-area {
 
 .left_col {
 	float: left;
-	width: 55%;
+	width: 58%;
 }
 
 .right_col {
 	float: left;
-	width: 45%;
+	width: 42%;
 }
 
 #total_usd, #total_rub {
@@ -60,7 +61,7 @@ canvas#chart-area {
 	padding: 0;
 	box-sizing: border-box;
 	border-radius: 4px;
-	background: rgba(250, 250, 250, 0.6);
+	background: rgba(250, 250, 250, .7);
 }
 
 .prices .curency .col p {
@@ -258,6 +259,10 @@ canvas#chart-area {
 	color: #429780;
 }
 
+.top_bar .value .sep {
+	color: #fff;
+}
+
 .total_sum {
 	color: #FFF;
 }
@@ -403,15 +408,41 @@ canvas#chart-area {
 	clear: both;
 }
 
+@media (max-width: 1260px) {
+	.left_col {
+		float: none;
+		width: 100%;
+	}
+
+	.right_col {
+		float: none;
+		width: 50%;
+	}
+}
+
 @media (max-width: 1100px) {
 	.prices {
-		float: none;
-		width: calc(100% - 50px);
-		margin: 0 25px 25px 25px;
+		margin: 0 0 25px 0;
 	}
 
 	#canvas-holder {
-		float: none;
-		width: calc(60%);
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.right_col {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 800px) {
+	.top_bar .item {
+		display: none;
+	}
+	.top_bar .item:first-child {
+		display: block;
+	}
+	.top_bar .value .sep {
+		display: none;
 	}
 }

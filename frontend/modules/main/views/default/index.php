@@ -46,7 +46,7 @@ $this->title = 'Portfolio';
 <div class="container">
     <div class="top_bar">
         <div class="item">
-            <div class="value">Market Cap: <span>$<?= number_format($total_market, 0, '', ' '); ?></span> | </div>
+            <div class="value">Market Cap: <span>$<?= number_format($total_market, 0, '', ' '); ?></span> <span class="sep">|</span> </div>
         </div>
         <div class="item">
             <div class="value">24h Vol: <span>$<?= number_format($total_market_24h, 0, '', ' '); ?></span> | </div>
