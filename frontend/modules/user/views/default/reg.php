@@ -4,7 +4,7 @@ use yii\widgets\ActiveForm;
 
 $this->title = 'Sign up';
 $this->params['breadcrumbs'][] = $this->title;
-$this->registerCssFile('/public/modules/user/css/reg.css', $options = [
+$this->registerCssFile('/public/modules/user/css/login.css', $options = [
     'depends' => [
         'frontend\assets\MainAsset'
         ]

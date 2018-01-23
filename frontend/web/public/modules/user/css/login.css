@@ -1,26 +1,55 @@
 body {
-	background: #005671;
+	font: 14px "Krungthep";
+	background: #3A3B3C;
+}
+
+.container {
+	padding: 0;
+}
+
+.header {
+	overflow: hidden;
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px solid #8A8A8D;
+	background: #3F3F42;
+}
+
+.logo {
+	width: 320px;
+	height: 60px;
+	margin: 15px 0 0 15px;
+	font-size: 34px;
+	line-height: 60px;
+}
+
+.green-text {
+	color: #10b562;
+}
+
+.white-text {
+	color: #FFF;
 }
 
 .wrapper-form {
 	width: 380px;
 	height: 100%;
 	padding: 10px 50px;
-	margin: 30px auto;
-	border-radius: 2px;
-	background: #F9F9F9;
-	box-shadow: 1px 8px 10px #00465B, -5px -1px 10px #00465B;
+	margin: 60px auto 0;
+	border-radius: 1px;
+	border: 1px solid #8A8A8D;
+	background: #454545;
 }
 
 .wrapper-form h1 {
 	margin: 0;
 	margin: 10px 0;
-	color: #535B61;
-	font: 18pt 'RobotoRegular';
+	color: #ccc;
+	font: 18px 'Krungthep';
 	text-align: center;
 }
 
-#login-form input[type='text'], #login-form input[type='password'] {
+#login-form input[type='text'], #login-form input[type='password'], #reg-form input {
 	width: 100%;
 	height: 38px;
 	padding: 0 10px;
@@ -29,6 +58,9 @@ body {
 	margin: 8px auto;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	color: #FFF;
+	border: 1px solid #ccc;
+	background: #414141;
 }
 
 .form-control {
@@ -38,26 +70,20 @@ body {
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
 .has-success .form-control {
 	border: none;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .085), 0 0 3px #67b168;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .085), 0 0 3px #67b168;
 }
 
 .has-error .form-control {
   border: none;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 4px #ce8483;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 4px #ce8483;
 }
 
 .help-block {
-	font: 11pt 'RobotoLight';
-	line-height: 11pt;
-	color: #D92B2B;
+	font-size: 11px;
+	line-height: 11px;
+	color: #DA4775;
 }
 
 .btn-send {
@@ -68,23 +94,23 @@ body {
 	cursor: pointer;
 	outline: none;
 	border: none;
-	border-bottom: 4px solid #8072AF;
-	border-radius: 2px;
+	border-bottom: 4px solid #14A058;
+	border-radius: 1px;
 	color: #F3F3F3;
-	font: 12pt 'RobotoRegular';
-	background: #9281C6;
+	font-size: 14px;
+	background: #10b562;
 	transition: background .3s;
 }
 
 .btn-send:hover {
-	background: #8072AF;
-	border-bottom: 4px solid #72669D;
+	background: #70B194;
+	border-bottom: 4px solid #629B83;
 }
 
 .btn-send:active {
 	padding-top: 3px;
-	background: #72669D;
-	border-bottom: 4px solid #72669D;
+	background: #629B83;
+	border-bottom: 4px solid #629B83;
 }
 
 .g-recaptcha {
@@ -93,14 +119,18 @@ body {
 }
 
 .field-loginform-rememberme {
-	display: inline-block;
+	display: block;
+	float: left;
 	width: 240px;
 	margin-top: 4px;
+	color: #ccc;
 }
 
 .recovery-password {
-	display: inline-block;
-	color: #7897D0;
+	display: block;
+	float: right;
+	margin-top: 4px;
+	color: #2D9F34;
 	text-decoration: none;
 }
 
@@ -110,4 +140,8 @@ body {
 
 .eauth-list {
 	margin: 0 0 16px 0 !important;
+}
+
+.clear {
+	clear: both;
 }

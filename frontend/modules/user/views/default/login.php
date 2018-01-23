@@ -5,6 +5,7 @@
 /* @var $model app\models\LoginForm */
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use frontend\assets\FontsAsset;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
@@ -16,8 +17,16 @@ $this->registerCssFile('/public/modules/user/css/login.css', $options = [
     ]);
 ?>
 <div class="user-default-login">
+
+<div class="header">
+    <div class="logo">
+        <span class="green-text">CRYPTO</span><span class="white-text">-TRACKER</span>
+    </div>
+</div>
+
+
 <div class="wrapper-form">
-    <h1>Login</h1>
+    <h1>Sign in</h1>
     <?= \nodge\eauth\Widget::widget(array('action' => '/user/default/login')); ?>
     <?php $form = ActiveForm::begin([
         'id' => 'login-form',
@@ -34,8 +43,10 @@ $this->registerCssFile('/public/modules/user/css/login.css', $options = [
 
         <?= Html::a('Sign up', ['/user/default/reg'], ['class' => 'recovery-password']); ?>
 
+        <div class="clear"></div>
+
         <div class="form-group">
-                <?= Html::submitButton('Login', ['class' => 'btn-send', 'name' => 'login-button']) ?>
+                <?= Html::submitButton('Sign in', ['class' => 'btn-send', 'name' => 'login-button']) ?>
         </div>
 
     <?php ActiveForm::end(); ?>
