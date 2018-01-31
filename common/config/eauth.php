@@ -12,8 +12,8 @@ return [
         'vkontakte' => [
             // register your app here: https://vk.com/editapp?act=create&site=1
             'class' => 'nodge\eauth\services\VKontakteOAuth2Service',
-            'clientId' => '6327452',
-            'clientSecret' => 'HkasDIF6CuiN3Ck8str2',
+            'clientId' => '6343730',
+            'clientSecret' => 'AbG6KcH5iqlBNEDFPUe4',
         ],
         // 'twitter' => [
         //     // register your app here: https://dev.twitter.com/apps/new

@@ -70,6 +70,9 @@ class Coins extends ActiveRecord {
             if ($cur == 'CNY') {
                 $coin_price = $coin[0]->price_cny;
             }
+            if ($cur == 'BTC') {
+                $coin_price = $coin[0]->price_btc;
+            }
 
             $coin_percent = $coin[0]->percent_change_24h;
             $coin_count = $coins[$i]['quan'];

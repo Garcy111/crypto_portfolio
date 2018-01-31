@@ -39,8 +39,6 @@ $this->title = 'Portfolio';
         $total_money += $data_coins[$i]['usd'];
     }
 
-    $total_money = floor($total_money);
-
 ?>
     
 <div class="container">
@@ -63,7 +61,13 @@ $this->title = 'Portfolio';
             if ($cur == 'RUB') echo "₽ ";
             if ($cur == 'EUR') echo "€ ";
             if ($cur == 'CNY') echo "¥ ";
-            echo number_format($total_money, 0, '.', ' ');
+            if ($cur == 'BTC') {
+                echo "Ƀ ";
+                echo number_format($total_money, 8, '.', ' ');
+            } else {
+                $total_money = floor($total_money);
+                echo number_format($total_money, 0, '.', ' ');
+            }
         ?>
     </h2>
 
@@ -83,6 +87,7 @@ $this->title = 'Portfolio';
             <?= Html::a('EUR', ['/main/default/index/', 'cur' => 'EUR'], ['class' => 'cur', 'data-pjax' => 0]); ?>
             <?= Html::a('RUB', ['/main/default/index/', 'cur' => 'RUB'], ['class' => 'cur', 'data-pjax' => 0]); ?>
             <?= Html::a('CNY', ['/main/default/index/', 'cur' => 'CNY'], ['class' => 'cur', 'data-pjax' => 0]); ?>
+            <?= Html::a('BTC', ['/main/default/index/', 'cur' => 'BTC'], ['class' => 'cur', 'data-pjax' => 0]); ?>
         </div>
     </div>
 
@@ -145,7 +150,12 @@ $this->title = 'Portfolio';
                     if ($cur == 'RUB') echo " ₽";
                     if ($cur == 'EUR') echo "€";
                     if ($cur == 'CNY') echo "¥";
-                    echo number_format($data_coins[$i]['price'], 2, '.', ' ');
+                    if ($cur == 'BTC') {
+                        echo "Ƀ ";
+                        echo number_format($data_coins[$i]['price'], 8, '.', ' ');
+                    } else {
+                        echo number_format($data_coins[$i]['price'], 3, '.', ' ');
+                    }
                 ?>
                 </p>
             </div>
@@ -162,7 +172,12 @@ $this->title = 'Portfolio';
                         if ($cur == 'RUB') echo " ₽";
                         if ($cur == 'EUR') echo "€";
                         if ($cur == 'CNY') echo "¥";
-                        echo number_format($data_coins[$i]['usd'], 2, '.', ' ');
+                        if ($cur == 'BTC') {
+                            echo "Ƀ ";
+                            echo number_format($data_coins[$i]['usd'], 4, '.', ' ');
+                        } else {
+                            echo number_format($data_coins[$i]['usd'], 2, '.', ' ');
+                        }
                     ?>   
                 </p>
             </div>
